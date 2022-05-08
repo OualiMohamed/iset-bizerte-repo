@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>At1 Ex6</title>
+  </head>
+  <body>
+    <script>
+      let nom;
+      let prenom;
+      let numero;
+
+      // Demander à l'utilisateur de saisir le nom et le prénom
+      nom = window.prompt("Introduire votre nom");
+      prenom = window.prompt("Introduire votre prenom");
+      
+      // Demander à l'utilisateur de saisir le numéro de la carte
+      numero = window.prompt("Introduire votre numero de carte");
+      numero = parseInt(numero);
+      
+      // Demande confirmation
+      if (confirm("Voulez-vous valider ce numéro ?"))
+        document.write(nom + " " + prenom + " (" + numero + ")");
+      else 
+        document.write(nom + " " + prenom);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>At1 Ex5</title>
+  </head>
+  <body>
+    <script>
+      let jours = parseInt(window.prompt("Jours: "));
+
+      let a = Math.floor(jours / 365);
+      let m = Math.floor((jours % 365) / 30);
+      let j = (jours % 365) % 30;
+      
+      document.write(
+        jours + " = " + a + " année(s) " + m + " moi(s) et " + j + " jours"
+      );
+    </script>
+  </body>
+</html>

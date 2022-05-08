@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>At1 Ex4</title>
+  </head>
+  <body>
+    <script>
+      let sec = parseInt(prompt("Donner le nombre de secondes"));
+
+      let heures = Math.floor(sec / 3600);
+      let minutes = Math.floor((sec % 3600) / 60);
+      let secondes = (sec % 3600) % 60;
+
+      document.write(
+        sec + "s = " + heures + "h " + minutes + "min " + secondes + "s"
+      );
+    </script>
+  </body>
+</html>

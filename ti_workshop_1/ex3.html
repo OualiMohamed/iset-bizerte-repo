@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>At1 Ex3</title>
+  </head>
+  <body>
+    <script>
+      // Fonction permettant de retourner un nombre
+      // aléatoire entre min et max
+      function getRandom(min, max) {
+        return Math.random() * (max - min) + min;
+      }
+
+      let systemNumber = Math.floor(getRandom(0, 10));
+      let userNumber = parseInt(prompt("Donner un nombre entre 0 et 10"));
+
+      if (systemNumber == userNumber) {
+        document.write("BRAVOOOOOOOOOO");
+      } else {
+        document.write("OUPPPPS");
+      }
+
+      document.write("<p>Le nombre à deviner est :" + systemNumber +" </p>");
+    </script>
+  </body>
+</html>
